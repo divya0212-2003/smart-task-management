@@ -1,62 +1,26 @@
-public class Task {
-    private String title;
-    private String priority;
-    private String status;
+# Smart Task Management System
 
-    public Task(String title, String priority) {
-        this.title = title;
-        this.priority = priority;
-        this.status = "Pending";
-    }
+## 📌 Description
+This project is a simple task management system where users can create, update, and track tasks efficiently.
 
-    public void markCompleted() {
-        this.status = "Completed";
-    }
+## 🚀 Features
+- Add tasks
+- Set priority
+- Track task status
+- Update and delete tasks
 
-    public String getTitle() {
-        return title;
-    }
+## 🛠 Technologies Used
+- Java
 
-    public String getPriority() {
-        return priority;
-    }
+## 📂 Project Structure
+- Task.java → Handles task details
+- (Add more files if you have)
 
-    public String getStatus() {
-        return status;
-    }
+## ▶️ How to Run
+1. Compile the program:
+   javac Task.java
+2. Run:
+   java Task
 
-    @Override
-    public String toString() {
-        return "Task: " + title + " | Priority: " + priority + " | Status: " + status;
-    }
-}
-import java.util.ArrayList;
-
-public class TaskManager {
-    private ArrayList<Task> tasks = new ArrayList<>();
-
-    public void addTask(String title, String priority) {
-        tasks.add(new Task(title, priority));
-        System.out.println("Task added successfully!");
-    }
-
-    public void viewTasks() {
-        if (tasks.isEmpty()) {
-            System.out.println("No tasks available.");
-            return;
-        }
-
-        for (int i = 0; i < tasks.size(); i++) {
-            System.out.println((i + 1) + ". " + tasks.get(i));
-        }
-    }
-
-    public void completeTask(int index) {
-        if (index >= 0 && index < tasks.size()) {
-            tasks.get(index).markCompleted();
-            System.out.println("Task marked as completed!");
-        } else {
-            System.out.println("Invalid task number.");
-        }
-    }
-}
+## 👩‍💻 Author
+Divya
