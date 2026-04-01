@@ -1,15 +1,32 @@
-# smart-task-management
-# Smart Task Management System
+public class Task {
+    private String title;
+    private String priority;
+    private String status;
 
-A simple Java-based task manager that allows users to:
-- Add tasks
-- Set priority
-- View tasks
-- Mark tasks as completed
+    public Task(String title, String priority) {
+        this.title = title;
+        this.priority = priority;
+        this.status = "Pending";
+    }
 
-## How to Run
-1. Compile:
-   javac *.java
+    public void markCompleted() {
+        this.status = "Completed";
+    }
 
-2. Run:
-   java Main
+    public String getTitle() {
+        return title;
+    }
+
+    public String getPriority() {
+        return priority;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    @Override
+    public String toString() {
+        return "Task: " + title + " | Priority: " + priority + " | Status: " + status;
+    }
+}
