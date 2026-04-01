@@ -1,2 +1,15 @@
 # smart-task-management
-Smart Task Management is a modern approach to organizing, prioritizing, and completing tasks efficiently using a combination of strategies, tools, and technology. It goes beyond simple to-do lists by helping individuals or teams focus on what truly matters, reduce stress, and improve productivity. 
+# Smart Task Management System
+
+A simple Java-based task manager that allows users to:
+- Add tasks
+- Set priority
+- View tasks
+- Mark tasks as completed
+
+## How to Run
+1. Compile:
+   javac *.java
+
+2. Run:
+   java Main
